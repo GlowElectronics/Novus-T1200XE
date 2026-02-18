@@ -27,7 +27,7 @@ Through my research on this project, I’ve gathered information regarding the c
 * N9V - Negative 9 volt. Used for RS232 and the internal modem.
 * LCDV - Negative 22 volt. Used for the LCD panel.
 * CBLON - Output from PMB. Toggles 5V to the display inverter board.
-* CPCNF - Input to PMB. Perhaps something to do with a co-processor.
+* CPCNF - Input to PMB. Perhaps something to do with a co-processor or automatic downclocking of the CPU when the laptop is idling.
 * ACIN - Output from PMB. AC-DC adapter present signal.
 * PCLR - Output from PMB. Power Clear / Reset.
 * INTDSP - Input to PMB. LOW on boot. High when screen lid switch is pressed. Signal to turn off CBLON.
@@ -53,6 +53,10 @@ RAM battery circuit - Eliminated. Tied to 5V.
 This PCB is designed in Eagle 6.5.\
 All development boards have been manufactured by JLCPCB, and the gerber files have been exported according to their requirements. This shouldn't be an issue for other manufacturers like PCBWay.
 
+## Known Issues
+
+As the RAM battery circuit has been eliminated, the Hard RAM feature (Persistent RAM disk) is not available when using this board. I can possibly add it in a future release.
+
 ## TODO
 
 Technical notes update.\
@@ -70,6 +74,7 @@ I've also spent a decent amount developing this board. If it helps you and you w
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T71UB3FH)
 
 ## Thanks and References
-Thanks to the following for helping to piece this puzzle together:
-* https://forum.vcfed.org/index.php?threads/toshiba-t1200xe-restoration-post.1242276/
-* https://www.minuszerodegrees.net/manuals/Toshiba/Other/Toshiba%20T1200XE%20-%20Maintenance%20Manual.pdf
+Thanks to the following for helping to piece this puzzle together:\
+The posts and users from this thread - https://forum.vcfed.org/index.php?threads/toshiba-t1200xe-restoration-post.1242276/ \
+The Maintenance manual hosted by Minus Zero Degrees - https://www.minuszerodegrees.net/manuals/Toshiba/Other/Toshiba%20T1200XE%20-%20Maintenance%20Manual.pdf \
+This Toshiba T1200XE write-up - https://retro.swarm.cz/toshiba-t1200xe-1990/
