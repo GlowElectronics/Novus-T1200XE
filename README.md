@@ -2,7 +2,7 @@
 
 This is a replacement power management board for the Toshiba T1200XE laptop. The goal was to implement similar features that the original power management board had. "Novus" is Latin for "New".
 
-Many of the original power boards are failing due to damage caused by aging and leaking capacitors. These capacitors can leak electrolyte, which corrodes PCB traces and seeps into the board layers, causing irreparable damage. The cost of components can rise fast and in many instances, doesn't remedy the failure. A replacement was needed!
+Many of the original power boards are failing due to damage caused by aging and leaking capacitors. These capacitors can leak electrolyte, which corrodes PCB traces and seeps into the board layers, causing irreparable damage. The cost of components can rise fast and in many instances, doesn't remedy the failure.
 
 What's been implemented?
 
