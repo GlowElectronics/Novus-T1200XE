@@ -4,13 +4,11 @@
 
 Coming soon!
 
-## Step 2 - Bootloader
+## Step 2 - Burn Bootloader
 
 Coming soon!
 
 ## Step 3 - Upload Code
-
-Here's the base firmware for the board.
 
 * Open the .ino file in Arduino.
 * Select "Arduino Pro or Pro Mini" under "Arduino AVR Boards"
