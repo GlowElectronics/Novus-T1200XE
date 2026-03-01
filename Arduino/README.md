@@ -1,5 +1,15 @@
 ## Arduino
 
+# Step 1 - Set Fuses
+
+Coming soon!
+
+# Step 2 - Bootloader
+
+Coming soon!
+
+# Step 3 - Upload Code
+
 Here's the base firmware for the board.
 
 * Open the .ino file in Arduino.
