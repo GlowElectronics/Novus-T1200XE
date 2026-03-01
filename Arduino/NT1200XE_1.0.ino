@@ -6,8 +6,6 @@
 ////                                                                                                            ////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// For D7 boards
-
 #include <Arduino.h>
 #include <Wire.h>
 
@@ -20,12 +18,12 @@ char val; // receiving data from the serial port
 // Power & Reset
 int pwrSwPin=2; // the power button
 int pwrEnPin=3; // the signal to enable TPS22965 #1
-int railPin=10; // the 5V rail load switch
 boolean pwrSwLast=LOW;
 boolean pwrSwCurrent=LOW;
 boolean pwrEn=true;
 
 // Switching
+int railPin=10; // the 5V rail load switch
 int neg22Sw=8; // negative 22 volt control (and negative 9 volt too)
 
 // Signals
