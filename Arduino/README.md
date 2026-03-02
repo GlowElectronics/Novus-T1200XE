@@ -4,7 +4,7 @@
 
 This method uses a USBasp hardware programmer and the AVRDUDE programming software.
 
-* Download AVRDUDE from GitHub - https://github.com/avrdudes/avrdude
+* Download AVRDUDE - https://github.com/avrdudes/avrdude
 * Extract AVRDUDE to C:\Temp or any other location
 * Download the Windows batch script - setfuses.cmd
 * Place setfuses.cmd in the same directory as AVRDUDE.exe
