@@ -15,24 +15,28 @@ set EFUSE=0xFD
 :: ------------------------
 
 echo Checking programmer connection...
-avrdude -c %PROGRAMMER% -p %MCU% -v > nul 2>&1
+
+avrdude -c %PROGRAMMER% -p %MCU% -v > avrdude_check.txt 2>&1
 
 if errorlevel 1 (
     echo ERROR: Programmer or MCU not detected.
-    echo Aborting.
+    type avrdude_check.txt
     pause
     exit /b 1
 )
 
-echo.
 echo Reading device signature...
-avrdude -c %PROGRAMMER% -p %MCU% -v | find "Device signature"
+
+findstr /C:"Device signature" avrdude_check.txt > nul
 
 if errorlevel 1 (
     echo ERROR: Unable to read device signature.
+    type avrdude_check.txt
     pause
     exit /b 1
 )
+
+findstr /C:"Device signature" avrdude_check.txt
 
 echo.
 echo Writing fuses...
@@ -64,16 +68,14 @@ if errorlevel 1 (
     exit /b 1
 )
 
-echo.
-echo Checking fuse values...
-
 set /p LF_READ=<lfuse_read.txt
 set /p HF_READ=<hfuse_read.txt
 set /p EF_READ=<efuse_read.txt
 
-echo LFUSE read: %LF_READ%
-echo HFUSE read: %HF_READ%
-echo EFUSE read: %EF_READ%
+echo.
+echo Expected LFUSE: %LFUSE%  Read: %LF_READ%
+echo Expected HFUSE: %HFUSE%  Read: %HF_READ%
+echo Expected EFUSE: %EFUSE%  Read: %EF_READ%
 echo.
 
 if /I not "%LF_READ%"=="%LFUSE%" (
@@ -101,6 +103,7 @@ echo ============================================
 del lfuse_read.txt
 del hfuse_read.txt
 del efuse_read.txt
+del avrdude_check.txt
 
 pause
 exit /b 0
