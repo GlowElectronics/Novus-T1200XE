@@ -19,6 +19,7 @@ This method uses a USBasp hardware programmer and the AVRDUDE programming softwa
 
 ## Step 3 - Upload Code
 
+* Insert a USB Type-C cable into the Novus T1200XE
 * Open the .ino file in Arduino.
 * Select "Arduino Pro or Pro Mini" under "Arduino AVR Boards"
 * Select your COM port
