@@ -16,6 +16,7 @@ This method uses a USBasp hardware programmer and the AVRDUDE programming softwa
 * While the USBasp is still connected, open Arduino IDE
 * Select "USBasp" under Tools | Programmer
 * Open the Tools menu again and select "Burn Bootloader"
+* Disconnect the USBasp
 
 ## Step 3 - Upload Code
 
