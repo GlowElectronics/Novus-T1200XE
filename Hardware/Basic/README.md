@@ -6,7 +6,7 @@ The zip archive contains the gerber files for the basic version and the xlsx fil
 
 The following is required for the PCB manufacturer-
 
-* novus_t1200xe_pm_dual_0.8_pa.zip
+* novus_t1200xe_pm_dual_0.8.1_pa.zip
 * novus_t1200xe_0.8_pa_basic_bom_smd.xlsx
 * novus_t1200xe_0.8_pa_basic_cpl_smd_upd.xlsx
 
@@ -20,4 +20,10 @@ If you're using a PCB manufacturer like JLCPCB, please select the option to conf
 
 novus_t1200xe_0.8_pa_basic_cpl_smd_upd.xlsx was updated for component orientation, however JLCPCB's viewer still does weird things with the components. Ensure that you select the option to confirm component placement.
 
-I am concerned about the final orientation of some components, particularly D10 and D12. The cathode (line) should face the 40-Pin connector on these two diodes.
+I'm concerned about the final orientation of some components, particularly D10 and D12. The cathode (line) should face the 40-Pin connector on these two diodes.
+
+## Update 6 March '26
+
+v0.8.1 Changes - Silkscreen orientation markings for D10 and D12 diodes & one ground via moved.
+
+I'm working on the PCBWay project page for this design.
