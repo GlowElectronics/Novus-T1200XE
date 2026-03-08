@@ -8,7 +8,7 @@ This method uses a USBasp hardware programmer and the AVRDUDE programming softwa
 * Extract AVRDUDE to C:\Temp or any other location
 * Download the Windows batch script - setfuses.cmd
 * Place setfuses.cmd in the same directory as AVRDUDE.exe
-* Connect your USBasp programmer to the Novus T1200XE board with 6 male-to-female jumper wires
+* Connect your USBasp programmer to the Novus T1200XE board with 6 jumper wires
 * Run setfuses.cmd
 
 ## Step 2 - Burn Bootloader
