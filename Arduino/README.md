@@ -31,7 +31,7 @@ Done!
 
 ## Issues
 
-If you encounter issues during the programming of the fuses (cannot set sck, etc.), please update the firmware on the USBasp to usbasp.2011-05-28.tar.gz from the official website - https://www.fischl.de/usbasp/
+If you encounter issues during the programming of the fuses (cannot set sck period, etc.), please update the firmware on the USBasp to usbasp.2011-05-28.tar.gz from the official website - https://www.fischl.de/usbasp/
 
 You can view this video on the update process - https://www.youtube.com/watch?v=MT_v0yea0Ik
 
