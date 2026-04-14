@@ -5,9 +5,9 @@
 ### Method 1 - Manual - Windows GUI
 
 * Download AVRDUDESS GUI and run it - https://github.com/ZakKemble/AVRDUDESS
-* Select your programmer from the list, change the port to match your hardware and click on **Detect under MCU(-p)**.
+* Select your programmer from the list, change the port to match your hardware and click on **Detect** under **MCU(-p)**.
 * Enter the following fuse values under **Fuses & lock bits:** L=0xFF H=0xDE E=0xFD
-* Select Set Fuses and click on Write
+* Select **Set Fuses** and click on **Write**
 
 The raw commands for official and clone USBasp's are: \
 original - avrdude.exe -c usbasp -p m328p -P usb -b 19200 -U lfuse:w:0xFF:m -U hfuse:w:0xDE:m -U efuse:w:0xFD:m \
