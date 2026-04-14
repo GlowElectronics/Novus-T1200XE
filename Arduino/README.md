@@ -13,7 +13,7 @@ The raw commands for official and clone USBasp's are:
 original - avrdude.exe -c usbasp -p m328p -P usb -b 19200 -U lfuse:w:0xFF:m -U hfuse:w:0xDE:m -U efuse:w:0xFD:m
 clone - avrdude.exe -c usbasp-clone -p m328p -P usb -b 19200 -U lfuse:w:0xFF:m -U hfuse:w:0xDE:m -U efuse:w:0xFD:m
 
-![Board](/../Images/avrdudess_fuses.png)
+![Board](../Images/avrdudess_fuses.png)
 
 ### Method 2 - Script - Windows Command Line
 
